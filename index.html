@@ -1,38 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us"
+      ng-app="personalPage"
+      data-ng-init="githubusername='luismoramedina'">
   <head>
     <meta charset="UTF-8">
-    <title>Luis Mora Medina by luismoramedina</title>
+    <title>{{userdata.title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Luis Mora Medina</h1>
-      <h2 class="project-tagline">Portfolio</h2>
+
+  <body ng-controller="DataController as ctrl">
+
+  <section class="page-header">
+      <img style="float: right;" src="{{githubuserdata.avatar_url}}" width="200"/>
+
+      <h1 class="project-name">{{githubuserdata.login}}</h1>
+      <h2 class="project-tagline">{{userdata.subtitle}}</h2>
     </section>
-
     <section class="main-content">
-      <h3>
-<a id="welcome-to-luis-mora-portfolio-20151128" class="anchor" href="#welcome-to-luis-mora-portfolio-20151128" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Luis Mora Portfolio (20151128)</h3>
-
-<p>Me
-<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAOBAAAAJDZkOGFlM2JlLTVkNjktNDZjMS1iN2MwLTIwOWIwMjRhOTg1Mw.jpg" alt="Me"></p>
-
-<h4>
-<a id="skills" class="anchor" href="#skills" aria-hidden="true"><span class="octicon octicon-link"></span></a>Skills</h4>
-
-<p>blabla</p>
+<p align="justify" ng-repeat="briefPart in userdata.brief">{{briefPart}}</p>
 
 <h4>
 <a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h4>
 
-<p><a href="https://github.com/luismoramedina">GitHub</a></p>
+<p><a href="https://github.com/{{githubusername}}">GitHub</a></p>
 
-<p><a href="https://es.linkedin.com/in/luismoramedina">LinkedIn</a></p>
+<p><a href="{{userdata.linkedin}}">LinkedIn</a></p>
 
       <footer class="site-footer">
 
@@ -43,4 +39,6 @@
 
   
   </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
+  <script src="javascripts/data-controller.js"></script>
 </html>

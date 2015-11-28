@@ -1,11 +1,16 @@
 {
+   "name" : "Luis Mora Medina",
    "title" : "Luis Mora Medina",
+   "nickname" : "luismoramedina",
    "subtitle" : "Desarrollador y entusiasta de la tecnología",
    "avatar" : "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAOBAAAAJDZkOGFlM2JlLTVkNjktNDZjMS1iN2MwLTIwOWIwMjRhOTg1Mw.jpg",
-   "brief" : "Arquitecto y desarrollador software. Autodidacta y emprendedor. Apasionado de la tecnología. \r\nCuento con más de 10 años de experiencia en el desarrollo de software. Mi carrera profesional se ha desarrollado principalmente en empresas privadas, donde he trabajado en importantes proyectos en el mundo de la banca, la movilidad y la administración pública. Actualmente desempeño tareas en un cliente de la banca. Tengo experiencia en el trato directo con el cliente y participo en todas las fases del ciclo de vida de software: desde la toma de requisitos hasta el desarrollo, mantenimiento y consultoría. Estoy especializado en el diseño de sistemas 'Back end' en entornos distribuidos así como en el área de la seguridad, implantando arquitecturas y procedimientos seguros basados en firma electrónica. \r\nMi principal reto en el trabajo es participar, a nivel técnico, en proyectos relacionados con las nuevas tecnologías y seguir disfrutando con lo que hago.",
- 
-   "projects" : 
-      [ 
+   "brief" : ["Arquitecto y desarrollador software. Autodidacta y emprendedor. Apasionado de la tecnología.",
+      "Cuento con más de 10 años de experiencia en el desarrollo de software. Mi carrera profesional se ha desarrollado principalmente en empresas privadas, donde he trabajado en importantes proyectos en el mundo de la banca, la movilidad y la administración pública. Actualmente desempeño tareas en un cliente de la banca. Tengo experiencia en el trato directo con el cliente y participo en todas las fases del ciclo de vida de software: desde la toma de requisitos hasta el desarrollo, mantenimiento y consultoría. Estoy especializado en el diseño de sistemas 'Back end' en entornos distribuidos así como en el área de la seguridad, implantando arquitecturas y procedimientos seguros basados en firma electrónica.",
+      "Mi principal reto en el trabajo es participar, a nivel técnico, en proyectos relacionados con las nuevas tecnologías y seguir disfrutando con lo que hago."],
+   "linkedin" : "https://es.linkedin.com/in/luismoramedina",
+
+   "projects" :
+      [
          {
             "name" : "",
             "date" : "",
