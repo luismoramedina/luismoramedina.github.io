@@ -19,16 +19,18 @@
 
       <h1 class="project-name">{{githubuserdata.login}}</h1>
       <h2 class="project-tagline">{{userdata.subtitle}}</h2>
+      <a href="https://github.com/{{githubusername}}"><img src="images/GitHub-Mark-32px.png"/></a>
+      <a href="{{userdata.linkedin}}"><img src="images/In-2CRev-34px-R.png"></a>
     </section>
     <section class="main-content">
 <p align="justify" ng-repeat="briefPart in userdata.brief">{{briefPart}}</p>
 
-<h4>
-<a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h4>
+<h4>Proyectos personales</h4>
 
-<p><a href="https://github.com/{{githubusername}}">GitHub</a></p>
+        <ul>
+            <li ng-repeat="project in userdata.projects"><b>{{project.name}} ({{project.date}})</b>: {{project.description}}</li>
+        </ul>
 
-<p><a href="{{userdata.linkedin}}">LinkedIn</a></p>
 
       <footer class="site-footer">
 

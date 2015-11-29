@@ -12,10 +12,23 @@
    "projects" :
       [
          {
-            "name" : "",
-            "date" : "",
-            "description" : "",
-            "url" : ""
+            "name" : "Hackathon Openbank",
+            "date" : "2015-11",
+            "description" : "Participación en el Hackathon 'Internet of Things Openbank' (http://internetofthingsopenbank.com) en la categoría de seguridad, presentando un proyecto para el alta como cliente y acceso seguro desde teléfonos inteligentes mediante mecanismos de seguridad robustos y basados en estándares."
          }
+      ,
+         {
+            "name" : "Hackathon Google Glass",
+            "date" : "2014-03",
+            "description" : "Aplicación para GoogleGlass de consulta de estado de cuentas, movimientos y transferencias para clientes BBVA."
+         }
+      ,
+         {
+            "name": "Monono dialer",
+            "date": "2012-01",
+            "description": "App Android para realizar llamadas telefónicas de una manera visual",
+            "url": "https://play.google.com/store/apps/details?id=com.monono.dialer"
+         }
+
       ]
 }
