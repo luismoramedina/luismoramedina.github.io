@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <title>{{userdata.title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{metadata.description}}">
+    <meta name="keywords" content="{{metadata.keywords}}">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -15,7 +17,7 @@
   <body ng-controller="DataController as ctrl">
 
   <section class="page-header">
-      <img style="float: right;" src="{{githubuserdata.avatar_url}}" width="200"/>
+      <img style="float: right;" src="{{githubuserdata.avatar_url}}" width="200" alt="{{userdata.title}}" title="{{userdata.title}}"/>
 
       <h1 class="project-name">{{githubuserdata.login}}</h1>
       <h2 class="project-tagline">{{userdata.subtitle}}</h2>
@@ -25,7 +27,7 @@
     <section class="main-content">
 <p align="justify" ng-repeat="briefPart in userdata.brief">{{briefPart}}</p>
 
-<h4>Proyectos personales</h4>
+<h3>Proyectos personales</h3>
 
         <ul>
             <li ng-repeat="project in userdata.projects"><b>{{project.name}} ({{project.date}})</b>: {{project.description}}</li>
